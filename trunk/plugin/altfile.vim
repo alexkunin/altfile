@@ -1,6 +1,4 @@
-" Title: AltFile 0.1a
-" Date: 2008-02-17
-" Author: Alex Kunin <alexkunin@gmail.com>
+" AltFile 0.1b by Alex Kunin <alexkunin@gmail.com>
 "
 "
 " PURPOSE
@@ -8,8 +6,13 @@
 " The plugin allows to switch easily between file.h/file.c,
 " main source/testcase, etc.
 "
+"
 " HISTORY
 " ===================================================================
+"
+" 2008-02-18    0.1b    If selected file is already visible
+"                       in some window, the script will
+"                       activate it.
 "
 " 2008-02-17    0.1a    When GUI is available, dialog forced
 "                       to be console-friendly, i.e. no GUI
@@ -201,7 +204,12 @@ function AltFile()
         let filename = path . '/' . filenames[choice - 1]
         let bufno = bufnr(filename)
         if bufno != -1
-            execute 'buffer ' . bufno
+            let winno = bufwinnr(filename)
+            if winno != -1
+                execute winno . ' wincmd w'
+            else
+                execute 'buffer ' . bufno
+            endif
         else
             execute 'edit ' . filename
         endif
