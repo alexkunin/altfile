@@ -1,7 +1,5 @@
 #summary List of available commands, functions, variables
 
-= API =
-
 == Functions ==
 
 || `AltFile_ShowMenu()` || show the menu and highlight default item (algorithm is similar to Alt-Tab on Windows or Cmd-Tab on Mac OS X) ||
