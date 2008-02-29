@@ -1,7 +1,5 @@
 #summary Usage instructions
 
-= Usage =
-
 Suppose we have a project which resides in a "proj" directory. Content of that directory might look like this:
 
 {{{
