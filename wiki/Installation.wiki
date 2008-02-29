@@ -1,7 +1,5 @@
 #summary Installation instructions
 
-= Installation =
-
 Copy altfile.vim to your ~/.vim/plugin/ folder. Bind some key to `AltFile_ShowMenu()` and `AltFile_ShowSelector()`:
 
 {{{
