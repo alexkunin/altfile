@@ -1,0 +1,17 @@
+## Functions ##
+
+| `AltFile_ShowMenu()` | show the menu and highlight default item (algorithm is similar to Alt-Tab on Windows or Cmd-Tab on Mac OS X) |
+|:---------------------|:-------------------------------------------------------------------------------------------------------------|
+| `AltFile_ShowSelector()` | show visual file selector |
+| `altfile#ShowMenu()` | autoloadable version of `AltFile_ShowMenu()` |
+| `altfile#ShowSelector()` | autoloadable version of `AltFile_ShowSelector()` |
+
+## Variables ##
+
+| `g:AltFile_CfgFile` | name of the configuration file; default is ".altfile" |
+|:--------------------|:------------------------------------------------------|
+
+## Commands ##
+
+| `:AltFile {label}` | switch to another file; autocompletion is available |
+|:-------------------|:----------------------------------------------------|

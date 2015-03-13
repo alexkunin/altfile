@@ -1,0 +1,12 @@
+Copy altfile.vim to your ~/.vim/plugin/ folder. Bind some key to `AltFile_ShowMenu()` and `AltFile_ShowSelector()`:
+
+```
+:nmap <expr> <M-Tab> AltFile_ShowMenu()
+:nmap <F3> :call AltFile_ShowSelector()<CR>
+```
+
+Make sure that `wildmenu` is enabled:
+
+```
+:set wildmenu
+```

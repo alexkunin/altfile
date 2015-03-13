@@ -1,0 +1,12 @@
+| 2008-03-01 | 0.2a | No more ":drop" (i.e. no more GUI dependency). File load/activation code is smarter now. Uncommented forgotten try...catch block. Removed all inline docs, added link to the project site. |
+|:-----------|:-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2008-02-26 | 0.2 | Added visual file selector (resembles BufExplorer; also, some tricks were borrowed from source code of that really nice script). Autoload support and "write-plugin" guidelines (thanks to Thomas Link for advices). |
+| 2008-02-19 | 0.1d | Now wildmenu is used as "engine", so look & feel are much better now. No more numeric shortcats, however. |
+| 2008-02-18 | 0.1c | Default choice now mimics Alt-Tab (Cmd-Tab for Mac users), i.e. hitting the hot key and then 
+
+&lt;CR&gt;
+
+ will cycle between last two files. Visual adjustments: current file is square brakets, and asterisk indicates default choice. |
+| 2008-02-18 | 0.1b | If selected file is already visible in some window, the script will activate it. |
+| 2008-02-17 | 0.1a | When GUI is available, dialog forced to be console-friendly, i.e. no GUI  window is poping up. |
+| 2008-02-16 | 0.1 | Initial release. |
